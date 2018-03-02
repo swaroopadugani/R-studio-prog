@@ -28,4 +28,5 @@ var3 <- "Hi"
 var4 <- "Abhijit"
 
 message <- paste(var3,var4)
+message
 
