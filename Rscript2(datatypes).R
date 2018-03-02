@@ -18,6 +18,6 @@ d <- F
 typeof(c)
 typeof(d)
 
-#complex
+#complex numbers
 w <- 3+2i
 typeof(w)
