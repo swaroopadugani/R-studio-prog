@@ -33,4 +33,10 @@ x <- seq(1,5)
 x
 rep(x,8)
 
+#vec recycling 
+vec1 <- c(1,2,3,4)           "adding two uneven-size vectors provides warning
+                              it copies the small vec number of times its required"
+vec2 <- c(1,2,3,4,5,6,7)
 
+add <- vec1+vec2
+add
