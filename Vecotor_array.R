@@ -40,3 +40,40 @@ vec2 <- c(1,2,3,4,5,6,7)
 
 add <- vec1+vec2
 add
+ 
+
+#R-specific programming
+x <- rnorm(5)
+for(i in x){
+  print(i)
+}  
+print(x[1])
+print(x[2])
+print(x[3])
+print(x[4])
+print(x[5])
+
+
+#Conventional programming loop
+x <- rnorm(5)
+for(i in 1:5){
+  print(x[i])
+}
+
+#... vectorized approach
+
+N <- 1000000
+a<- rnorm(N)
+b<- rnorm(N)
+c <- a*b
+print(c)
+
+#....devectorized approach
+
+d <- rep(NA,N)
+for(i in 1:N){
+  d[i] <- a[i]*b[i]
+  print(d)
+}
+
+"vectorised approach is much faster than de-vectorised"
